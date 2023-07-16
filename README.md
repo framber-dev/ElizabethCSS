@@ -14,5 +14,9 @@ Microframework para el desarrollo web basando en TailwindCSS
 > En proceso...
 
 ## Creditos
-Este proyecto ha sido inspirando en tailwind.
+Este proyecto ha sido inspirando en tailwindCSS
+
+## Apoyar el proyecto
+
+Si deseas apoyar este proyecto invintame un cafe **https://ko-fi.com/frambertech**
 
