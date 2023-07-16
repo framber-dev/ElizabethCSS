@@ -1,0 +1,240 @@
+/*
+! Card.css v1.0.0
+* Developed by Framber (Frambersilva.com)
+* Copyright © 2022
+* License Mit
+*/
+.card{
+	padding: 8px}
+
+.card-body{
+	padding: 16px}
+
+.card-title{
+	font-size: 1.25em;}	
+
+.card-image img{
+	width: 100%;
+	object-fit: cover;
+	display: block;
+	vertical-align: middle}
+
+.card-blog, 
+.card-grid,
+.card-modern,
+.card-portafolio{
+	transition: all .3s ease 0s}
+
+.card-blog:hover,
+.card-grid:hover,
+.card-modern:hover,
+.card-portafolio:hover{
+	transform: translateY(-4px)}
+
+/*Portafolio*/
+.card-portafolio{
+	background-color: transparent}
+
+.card-portafolio .card-body{
+	padding: 8px 0;
+	margin: 0}
+
+.card-portafolio .card-title a{
+	color: var(--text)}	
+
+/* => Card-grid*/
+.card-grid{
+	background-color: var(--white);
+	box-shadow: var(--shadow-sm)}
+
+.card-grid .card-image{
+	width: 100%;
+	height: 100%}	
+
+.card-grid .card-image img,
+.card-blog .card-image img{
+	object-fit: cover;
+	height: 200px}
+
+/* => Card-blog */
+.card-blog{
+	padding: 16px;
+	border-radius: var(--radius-lg);
+	background-color: var(--light)}
+
+.card-blog .card-image img{
+	border-radius: var(--radius-sm)}	
+
+/*=>Card-list*/
+.card-list{
+	display: flex;
+	flex-wrap: wrap;}
+
+.card-list .card-image {
+	width: 200px;
+	height: 100%;
+
+	transition: all .3s ease 0s;
+	object-fit: cover}
+
+.card-list .card-image img{
+		border-radius: var(--radius-md);
+	height: 200px}
+
+.card-list .card-body{
+	padding-top: 0;
+	width: calc(100% - 200px)}
+
+.card-list .card-title{
+	font-size: 1.50em;
+	font-weight: 600;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	color: var(--dark)}	
+
+.card-list .card-snippet{
+	padding:16px 0;}
+
+.card-list .card-meta{
+	padding: 0}	
+
+@media screen and (max-width: 800px){
+	.card-list .card-snippet{
+		display: none}
+
+	.card-list .card-title,
+	.card-list .card-meta{
+		font-size: 95%;
+		padding: 0;}
+
+	.card-list .card-image{
+		width: 100px;
+		height: 100%;
+		object-fit: cover}
+
+	.card-list .card-image img{
+		height: 100px}	
+
+	.card-list .card-body{
+		width: calc(100% - 100px)}
+}
+
+/*=> card-overlay*/
+.card-overlay {
+  	position: relative;
+  	box-shadow: var(--shadow-sm);
+  	border-radius: var(--radius-sm);
+  	overflow: hidden; }
+
+.card-overlay .card-image {
+  	padding: 0; }
+
+.card-overlay .card-image img {	
+	height: 280px;
+	object-fit: cover;	
+	transition: all .3s ease 0s;
+  	display: block; }
+
+.card-overlay .card-image img:hover{
+  	transform: scale(1.1);
+  	opacity: .9}
+
+.card-overlay .card-body {
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background: linear-gradient(transparent, rgba(0, 0, 0, .9));
+  	z-index: 2 }
+
+.card-overlay .card-title{
+	color: var(--light);
+	font-weight: 600;
+	font-size: 1.45rem;}	
+
+.card-overlay .card-title,
+.card-overlay .card-meta,
+.card-overlay a{
+  	color: var(--light) }
+
+.card-overlay .card-meta time{
+	opacity: .7;
+	text-transform: uppercase}  	
+
+ /* => Card-modern */
+ .card-modern{
+  	position: relative;
+  	margin-bottom: 3.3em}
+
+.card-modern .card-image{
+	width: 100%;
+  	padding: 0;
+  	margin: 0;}	
+
+.card-modern .card-image img{
+  	height:260px;
+  	width: 100%;
+  	object-fit: cover}
+
+.card-modern .card-body{
+	width: 96%;
+  	position:absolute;
+  	background-color: #fff;
+  	bottom: -120px;
+  	left: 0;
+  	right: 0;
+  	margin-bottom: 60px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	z-index: 3;
+  	box-shadow: 0px 2px 4px rgba(0, 21, 64, .1);
+  	border-radius: 8px}
+/*------------Components------------*/
+.lazy-change{
+	-webkit-animation:fadeIn 1s;
+	animation:fadeIn 1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-play-state:paused;
+	animation-play-state:paused
+}
+
+.lazy-loaded{
+	-webkit-animation-play-state:running;
+	animation-play-state:running
+}
+
+.image img{
+	display: block
+}
+
+.lazy{
+	display:none;
+}
+
+/*------------Keyframes------------*/
+@-webkit-keyframes fadeIn{
+	from{
+		opacity:0}
+	to{
+		opacity:1}
+}
+
+@keyframes fadeIn{
+	from{
+		opacity:0
+	}
+	to{
+		opacity:1
+	}
+}
+@keyframes dropdown {
+    0% {
+    transform: translateY(-1rem) scale(.9);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    }
+}

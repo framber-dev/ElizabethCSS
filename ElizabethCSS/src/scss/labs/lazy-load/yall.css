@@ -1,0 +1,29 @@
+.lazy-change{
+	-webkit-animation:fadeIn 1s;
+	animation:fadeIn 1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-play-state:paused;
+	animation-play-state:paused
+}
+
+.lazy-loaded{
+	-webkit-animation-play-state:running;
+	animation-play-state:running
+}
+
+.lazy{
+	display:none;
+}
+
+/*! Animaciones */
+@-webkit-keyframes fadeIn{
+	from{
+		opacity:0}
+	to{
+		opacity:1}
+}
+@keyframes fadeIn{
+	from{opacity:0}
+	to{opacity:1}
+}

@@ -1,0 +1,110 @@
+/*--------------Navbar---------------*/
+.nav__menu {
+   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+}
+.nav__menu a {
+   padding: 1.4rem 1.2rem;
+   font-weight: 500;
+   white-space: nowrap;
+   text-transform: uppercase;
+   font-size: 1.1rem;
+   position: relative;
+   z-index: 1;
+}
+.nav__menu ul a {
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
+   transition: background .3s;
+}
+.nav__menu ul > li:hover > a {
+    background: rgba(255,255,255,.15);
+}
+.nav__menu .is-parent > a > span.is-arrow::after,
+.nav__menu ul .is-parent > a > span.is-arrow::after {
+   border: 2px solid;
+   width: 8px;
+   height: 8px;
+   margin-top: -3px;
+   -webkit-transform: rotate(45deg) translateZ(0);
+   transform: rotate(45deg) translateZ(0);
+   margin-left: .75rem;
+   transition: -webkit-transform .3s;
+   transition: transform .3s;
+   transition: transform .3s,-webkit-transform .3s;
+}
+
+.dropdown-menu{
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+
+.dropdown-menu li{
+	position:relative
+}
+
+.dropdown-menu a{
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-align:center;
+	align-items:center
+}
+
+.dropdown-menu ul{
+	text-align:left;
+	display: none
+}
+
+.dropdown-menu ul.is-active{
+	display:block
+}
+
+.dropdown-menu .is-arrow{
+	margin-left:auto
+}
+
+.dropdown-menu .is-parent>a .is-arrow::after{
+	content:"";
+	display:inline-block;
+	vertical-align:middle;
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
+	border-top:4px dashed;
+	margin-left:.5rem
+}
+
+.dropdown-menu > li {
+    transition: background .3s;
+}
+
+.dropdown-menu li > ul {
+    background-color: var(--black-dark);
+}
+
+@media (min-width:992px){
+	.dropdown-menu{
+		-ms-flex-direction:row;
+		flex-direction:row
+	}
+	.dropdown-menu ul{
+		top:0;
+		left:100%;
+		position:absolute;
+		min-width:100%
+	}
+	.dropdown-menu a{
+		white-space:nowrap
+	}
+	.dropdown-menu>li>ul{
+		top:100%;
+		left:0
+	}
+	.dropdown-menu ul .is-parent>a .is-arrow::after{
+		border-left:4px dashed;
+		border-right:0 transparent;
+		border-top:4px solid transparent;
+		border-bottom:4px solid transparent
+	}
+}
+

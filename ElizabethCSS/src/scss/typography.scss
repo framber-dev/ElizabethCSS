@@ -1,0 +1,43 @@
+/*------------typography------------*/
+.typography{
+	position: relative;
+	padding: 1rem;
+    color:rgb(84, 110, 122);
+}
+
+.typography h2,
+.typography h3{
+    border-bottom: 1px solid rgba(0, 0,0, .25);
+    padding-bottom: var(--md);
+    margin-bottom: var(--md);
+    font-weight: 500
+}
+
+.lead{
+	font-weight: 300;
+	font-size: 1.5rem
+}
+
+.typography > .articleBody img{
+	border-radius: var(--sm);
+	box-shadow: var(--sh-sm);
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.headline__pro{
+	background-color: rgb(98, 52, 174);
+    margin: 20px 0px;
+    height: 4px;
+    width: 10%;
+}

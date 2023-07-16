@@ -1,0 +1,441 @@
+/*------------------------------------------
+! Layout.css
+-------------------------------------------*/
+.block{
+	display: block
+}
+
+.none{
+	display: none
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.grid{
+	display: grid
+}
+
+.visibility-visible{
+	visibility: visible;
+}
+
+.visibility-hidden{
+	visibility: hidden;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: hidden;
+}
+
+.overflow-auto{
+  overflow: auto;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.sticky{
+	position: sticky;
+	top: 1rem;
+	display: block
+}
+
+.t0{
+	top: 0;
+}
+
+.r0{
+	right: 0;
+}
+
+.l0{
+	left: 0;
+}
+
+.b0{
+	bottom: 0;
+}
+
+.t-sm{
+	top:50%;
+}
+
+.r-sm{
+	right: 50%;
+}
+
+.l-sm{
+	left: 50%;
+}
+
+.b-sm{
+	bottom: 50%
+}
+
+.t-md{
+	top:100%;
+}
+
+.r-md{
+	right: 100%;
+}
+
+.l-md{
+	left: 100%;
+}
+
+.b-md{
+	bottom: 100%
+}
+
+.text-center{
+	text-align: center
+}
+
+.flex{
+	display: flex
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.wrap-reverse{
+	flex-wrap: wrap-reverse;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.row-reverse{
+	flex-direction: row-reverse;
+}
+
+.column{
+	flex-direction: column;
+}
+
+.column-reverse{
+	flex-direction: column-reverse;
+}
+
+.item-center{
+	align-items: center;
+}
+
+.justify-between{
+	justify-content: space-between;
+}
+
+.justify-around{
+	justify-content: space-around;
+}
+
+.justify-evenly{
+	justify-content: space-evenly;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+@media (max-width: 576px){
+.block-sm{
+	display: block
+}
+
+.none-sm{
+	display: none
+}
+
+.inline-block-sm{
+	display: inline-block;
+}
+
+.grid-sm{
+	display: grid
+}	
+
+.relative-sm{
+	position: relative 
+}
+
+.absolute-sm{
+	position: absolute 
+}
+
+.fixed-sm{
+	position: fixed 
+}
+
+.sticky-sm{
+	position: sticky;
+	top: 1rem;
+	display: block 
+}
+
+.text-center-sm{
+    text-align: center
+}
+
+}
+@media (min-width: 768px){
+.block-md{
+	display: block
+}
+
+.none-md{
+	display: none
+}
+
+.inline-block-md{
+	display: inline-block;
+}
+
+.grid-md{
+	display: grid
+}
+.relative-md{
+	position: relative 
+}
+
+.absolute-md{
+	position: absolute 
+}
+
+.fixed-md{
+	position: fixed 
+}
+
+.sticky-md{
+	position: sticky;
+}
+
+.text-center-md{
+    text-align: center
+}
+}
+
+@media (min-width: 992px){
+.block-lg{
+	display: block
+}
+
+.none-lg{
+	display: none
+}
+
+.inline-block-lg{
+	display: inline-block;
+}
+
+.grid-lg{
+	display: grid
+}
+
+.relative-lg{
+	position: relative 
+}
+
+.absolute-lg{
+	position: absolute 
+}
+
+.fixed-lg{
+	position: fixed 
+}
+
+.sticky-lg{
+	position: sticky;
+	top: 1rem;
+	display: block 
+}
+
+.text-center-lg{
+    text-align: center
+}
+
+.text-left-lg{
+   text-align: left
+}
+
+.text-right-lg{
+    text-align: right
+}
+    	
+.flex-lg{
+	display: flex
+}
+
+.wrap-lg{
+	flex-wrap: wrap
+}
+
+.wrap-reverse-lg{
+	flex-wrap: wrap-reverse
+}
+
+.flex-row-lg{
+	flex-direction: row
+}
+
+.row-reverse-lg{
+	flex-direction: row-reverse
+}
+
+.column-lg{
+	flex-direction: column
+}
+
+.column-reverse-lg{
+	flex-direction: column-reverse
+}
+
+.item-center-lg{
+	align-items: center;
+}
+
+.between-lg{
+	justify-content: space-between ;
+}
+
+.justify-between-lg{
+	justify-content: space-between;
+}
+
+.justify-around-lg{
+	justify-content: space-around;
+}
+
+.justify-evenly-lg{
+	justify-content: space-evenly;
+}
+
+.justify-center-lg{
+	justify-content: center;
+}
+
+}
+
+@media (min-width: 1200px){
+.block-xlg{
+	display: block
+}
+
+.none-xlg{
+	display: none
+}
+
+.inline-block-xlg{
+	display: inline-block;
+}
+
+.grid-xlg{
+	display: grid
+}
+
+.relative-xlg{
+	position: relative 
+}
+
+.absolute-xlg{
+	position: absolute 
+}
+
+.fixed-xlg{
+	position: fixed 
+}
+
+.sticky-xlg{
+	position: sticky;
+}
+
+.text-center-xlg{
+    text-align: center
+}
+
+}
+/*------------------------------------------
+! CSS Grid
+-------------------------------------------*/
+[class*="col-"] { 
+	display: grid;
+}
+// Gap
+@for $i from 1 to 6{
+  .gap-#{$i * 8}{
+    gap: $i * 8px;
+  }
+}
+// Defaults
+@for $i from 1 to 7{
+  .col-#{$i * 1}{
+     grid-template-columns: repeat($i, 1fr);
+   }
+}
+@for $i from 1 to 7{
+	.span-#{$i * 1}{
+      grid-column: span $i * 1
+    }
+}
+// Grande
+@media (max-width: 992px){
+  @for $i from 1 to 7{
+    .gra-col-#{$i * 1}{
+      grid-template-columns: repeat($i, 1fr)
+    }
+    .gra-span-#{$i * 1}{
+      grid-column: span $i * 1
+    }
+   }
+}
+// Mediano
+@media (max-width: 768px){
+  @for $i from 1 to 7{
+    .med-col-#{$i * 1}{
+      grid-template-columns: repeat($i, 1fr)
+    }
+    .med-span-#{$i * 1}{
+      grid-column: span $i * 1
+    }
+   }
+}
+// Pequeño
+@media (max-width: 576px){
+  @for $i from 1 to 7{
+    .peq-col-#{$i * 1}{
+      grid-template-columns: repeat($i, 1fr)
+    }
+    .peq-span-#{$i * 1}{
+      grid-column: span $i * 1
+      }
+   }
+}
